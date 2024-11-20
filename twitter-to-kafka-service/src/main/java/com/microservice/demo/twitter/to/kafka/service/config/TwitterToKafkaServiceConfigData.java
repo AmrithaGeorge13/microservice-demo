@@ -10,5 +10,15 @@ import java.util.List;
 @Configuration
 @ConfigurationProperties(prefix="twitter-to-kafka-service")
 public class TwitterToKafkaServiceConfigData {
-    private List<String> topics;
+    private List<String> twitterKeyWords;
+    private String welcomeMessage;
+
+
+    public List<String> getTwitterKeyWords(){
+        return twitterKeyWords;
+    }
+
+    public String getWelcomeMessage(){
+        return welcomeMessage;
+    }
 }

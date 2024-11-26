@@ -13,12 +13,12 @@ public class TwitterKafkaListener extends StatusAdapter {
 
     @Override
     public void onStatus(Status status) {
-        LOG.info("Twitter status with text "+status.getText());
+        LOG.info("Twitter status with text " + status.getText());
     }
+
     @Override
     public void onException(Exception ex) {
-        ex.printStackTrace();
-        LOG.error("Exception Occured {}",ex.getMessage());
+        LOG.error("Exception Occured {}", ex.getMessage());
     }
 
     @Override
